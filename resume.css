@@ -1,0 +1,53 @@
+#resumeHeading{
+    text-align: center;
+}
+#education, #work, #skills{
+    margin: 0px 20px;
+    border-bottom: 1px solid #B4B4B3;
+}
+#educationContainer, #workContainer, #skillsContainer{
+    margin: 80px auto;
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+#workContentContainer, #skillsContentContainer, #educationContentContainer{
+    width: 44%;
+}
+#workContentContainer p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.educationContent p{
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+}
+#skills{
+    border-bottom: none;
+}
+@media only screen and (max-width: 900px) {
+    #work{
+        width: 100%;
+        margin: 0;
+    }
+    #resumeHeading{
+        margin-top: 10px;
+        text-align: center;
+    }
+    #workContentContainer, #skillsContentContainer, #educationContentContainer{
+        width: 90%;
+    }
+    #educationContainer, #workContainer, #skillsContainer{
+        width: 80%;
+        display: block;
+        margin: 30px;
+    }
+    #workContentContainer p{
+       width: 100%;
+    }
+
+
+
+}

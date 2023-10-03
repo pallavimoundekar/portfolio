@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="navbar">
+        <div>
+            <p id="navbarPara"> <span id="topCircle"></span> Pallavi Moundekar <span id="designation">Web
+                    Developer</span></p>
+        </div>
+
+        <div id="navbar_items">
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="resume.html"> Resume </a></li>
+                <li><a href="project.html"> Projects </a></li>
+                <li><a href="contact.html"> Contact </a></li>
+            </ul>
+        </div>
+        <div id="menu" onclick="menu();">
+            <img src="menu.png" alt="menu" />
+        </div>
+    </div>
+
+    <div id="respMenu">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="resume.html"> Resume </a></li>
+            <li><a href="project.html"> Projects </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+        </ul>
+    </div>
+    
+    <div id="contact_formContainer">
+        <div>
+            <h1>Contact</h1>
+            <p>Looking forward to hearing from you .</p>
+            <h3>Phone</h3>
+            <p>+91 7972017633</p>
+            <h3>Email</h3>
+            <p>moundekarpallavi7@gmail.com</p>
+        </div>
+        <div id="form">
+            <form action="">
+            <table cellpadding="5" cellspacing="8" id="formTable">
+                <tr>
+                    <td>
+                        <p>First Name</p>
+                        <input type="text" name="firstname" id="firstname" required/>
+                    </td>
+                    <td>
+                        <p>Last Name</p>
+                        <input type="text" name="lastname" id="lastname" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email</p>
+                        <input type="email" name="email" id="email" required />
+                    </td>
+                    <td>
+                        <p>Subject</p>
+                        <input type="text" name="subject" id="subject" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Message</p>
+                        <textarea cols="20" rows="10" id="message"></textarea>
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit" onclick="sendEmail();" />
+                    </td>
+                </tr>
+            </table>
+    
+</form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <h3>Phone</h3>
+            <p>+91 7972017633</p>
+        </div>
+        <div>
+            <h3>Email</h3>
+            <p>moundekarpallavi7@gmail.com</p>
+        </div>
+        <div>
+            <h3>Follow Me</h3>
+            <p><span class="footerImages"><a href=""><img src="linkedin.png" /></a></span><span><a href="https://wa.me/7972017633/?text=Hello"><img src="whatsapp.png" /></a></span></p>
+        </div>
+   </footer>
+
+   <script src="index.js" ></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

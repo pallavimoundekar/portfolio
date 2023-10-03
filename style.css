@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #F3F3F3;
+}
+
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    border-bottom: 2px solid #B4B4B3;
+}
+
+#navbarPara {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#designation {
+    font-size: 18px;
+    margin: 0px 2px;
+}
+
+#topCircle {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: #EEA302;
+    background-image: linear-gradient(to right, #EEA302, #FF3B25, #80D8DA);
+    border-radius: 100%;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+}
+
+#navbar_items {
+    width: auto;
+    align-items: center;
+}
+
+#navbar_items ul {
+    display: flex;
+}
+
+#navbar_items li {
+    list-style-type: none;
+}
+
+#navbar_items li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    border-right-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+    padding: 0px 14px;
+}
+
+#navbar_items li a:hover{
+    cursor: pointer;
+    color:#EEA302;
+    transition: .500s;
+}
+#contentCircle a {
+    text-decoration: none;
+    color: black;
+}
+
+#image_contentContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+#imageContainer {
+    padding: 2%;
+    border: 3px solid #B4B4B3;
+    border-radius: 20px;
+    width: 24%;
+}
+
+#imageContainer img {
+    width: 98%;
+    border: 3px solid #B4B4B3;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#contentContainer {
+    width: 40%;
+    margin-left: 50px;
+}
+
+#contentCircle {
+    display: flex;
+    width: 100%;
+}
+
+#resume,
+#contact,
+#projects {
+    padding: 5% 5%;
+    border: 1px solid #B4B4B3;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0px 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#resume:hover,
+#contact:hover,
+#projects:hover {
+    background-color: white;
+    cursor: pointer;
+    transition: all .900s;
+}
+
+#resume {
+    background-color: #EEA302;
+}
+
+#projects {
+    background-color: #FF3B25;
+}
+
+#contact {
+    background-color: #80D8DA;
+}
+
+footer {
+    display: flex;
+    border-top: 2px solid #B4B4B3;
+    justify-content: space-evenly;
+    margin: 0px 40px;
+}
+
+.footerImages {
+    margin-right: 14px;
+}
+
+#menu{
+    display: none;
+}
+#respMenu{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+#navbarPara{
+    width: 60%;
+}
+
+    #navbar_items{
+        display: none;
+    }
+    #menu{
+        display: inline-block;
+    }
+
+    #image_contentContainer {
+        display: block;
+        border-radius: 100%;
+    }
+
+    #image_contentContainer img {
+        height: 400px;
+
+    }
+
+    #contentContainer {
+        width: 90%;
+        margin: 5px;
+        margin: auto;
+        padding: 2px;
+        
+    }
+
+    #imageContainer {
+        width: 80%;
+        margin: auto;
+    }
+
+    #contentCircle {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #resume,
+    #contact,
+    #projects {
+        width: auto;
+        height: 4%;
+        margin: 6px;
+        font-size: 70%;
+    }
+
+    footer{
+        display: block;
+    }
+    #respMenu{
+        border: 2px solid #B4B4B3;
+        display: none;
+        position: relative;
+        width:80%;
+        top: -500px;
+        margin:20px auto;
+        border-radius: 20px;
+        animation-name: menubar;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards; 
+        text-align: justify;
+    }
+  
+    @keyframes menubar {
+        0%{
+           top: -500px;
+        }
+        100%{
+            top: 0px;
+        }
+    }
+    #respMenu ul{
+        position: relative;
+        margin: auto;
+    }
+    #respMenu ul li{
+        list-style-type: none;
+        padding: 10px;
+        margin: auto;
+        position: relative;
+        left:0px;
+        width: 70%;
+       
+    }
+    #respMenu ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        margin: auto;
+    }
+    #respMenu ul li a:hover{
+        color:#EEA302;
+        font-weight: 400;
+    }
+}
